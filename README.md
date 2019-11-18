@@ -16,16 +16,11 @@ Toutefois il est possible de trouver cette frontière en supposant que les donn�
 
 
   
-  ![SVM](C:/Users/farid/Pictures/svmm.PNG){width=10cm}
-  
-  
   
 Cependant les SVM ne se bornent pas qu' à séparer des points dans le plan. Ils peuvent en fait séparer des points dans un espace de dimension quelconque :On passe les données de départ dans un espace de plus grande dimension (à partir d'une fonction de transformation )dans lequel les donnnées peuvent être linéairement séparables: C'est l'astuce kernel.C'est une fonction obtenue par produit scalaire  des fonctions de transformations.Les noyaux couramment utilisés sont le noyau polynomial, gaussien,rationnel. 
 
 Chaque erreur aura un coût, et le SVM tente alors de trouver l'hyperplan séparateur qui minimise le coût associé aux erreurs de classification, tout en maximisant la marge comme dans le cas de données linéairement séparables.
 
-  
-  ![Utilisation du Kernel](C:/Users/farid/Pictures/kernel.PNG){width=10cm}
   
 
 L'avantage du kernel est qu il  peut s'adapter au cas ou les données sont linéairement séparables(*kernel lineaire*) ou non (*kernel  polynomiale,guaussien,et perceptron*), ce qui nous conduit à retenir cette deuxième solution pour la suite de l'appplication  avec ou sans variables de ressorts.
