@@ -4,14 +4,14 @@
  
  <div style="text-align: justify">  **Contexte de l'étude**
   
-   La fraude à la carte bancaire est un sujet complexe et passionnant du point de vue mathématique. Les algorithmes développés doivent être capables de s'adapter tout autant aux spécificités des données de transaction qu'à celles des fraudes.Nous présenterons par la suite le SVM pour la detection de fraude sur les cartes de crédit.
-Dans le carde de ce projet, l'objectif sera de developper une application web shiny (en lien avec R) illustrant  la détection de la fraude sur les cartes de crédits des clients de la banque en utilisant le svm comme nouveau modèle. 
+   La fraude à la carte bancaire est un sujet complexe qui touche des millions de personnes chaque année. Les algorithmes développés doivent être capables de s'adapter tout autant aux spécificités des données de transaction qu'à celles des fraudes. C'est dans ce cadre que nous présentons ici un démonstrateur utilisant les machines à vecteurs de support (SVM) comme algorithme tout en ayant une phase masquée de la complexité algorithmique développée dans les logiciels (utilisable par tous les collaborateurs).
+
 
   
  <span style="color:  #0000FF"> **1.Présentation du SVM**</span> 
   
-  Particulièrement récente (1995), le SVM (support vector machine) est l'une des techniques d'apprentissage supervisée les mieux connues notament en terme de détection de fraude.Elle s'applique à la fois sur les problématiques de régression que sur ceux de classifications. Dans le cadre de notre projet et dans la plus part des cas, c'est cette dernière qui est retenue.
- L'objectif est d'étudier l'appartenance des individus à des groupes distincts( deux classes) c'est à dire de trouver une frontière appellée hyperplan séparateur qui sépare au mieux les groupes de données de l'échantillon;ce qui pose un problème d'optimisation. Toute la difficulté repose alors sur la façon de trouver cette frontière qui peut prendre des formes multiples et d'allures différentes. 
+  Particulièrement récente (1995), le SVM (support vector machine) est l'une des techniques d'apprentissage supervisée les mieux connues notament en terme de détection de fraude. Elle s'applique à la fois sur les problématiques de régression que sur ceux de classifications. Dans le cadre de notre projet et dans la plus part des cas, c'est cette dernière qui est retenue.
+ L'objectif est d'étudier l'appartenance des individus à des groupes distincts( deux classes) c'est à dire de trouver une frontière appellée hyperplan séparateur qui sépare au mieux les groupes de données de l'échantillon; ce qui pose un problème d'optimisation. Toute la difficulté repose alors sur la façon de trouver cette frontière qui peut prendre des formes multiples et d'allures différentes. 
 Toutefois il est possible de trouver cette frontière en supposant que les données de l'échantillon peuvent être linéairement séparables. Il s'agira alors de choisir parmi les frontières candidates, celle qui maximise la marge(le double de la distance qui sépare les points supports à la frontières) entre les deux groupes.
 
 
@@ -53,5 +53,11 @@ En conséquent nous avons rééquilibré la base de données avec la technique d
    <span style="color:  #0000FF">**3.Conclusion**</span> 
 
 Nous avons obtenu le taux d'erreur le plus faible avec le kernel radial,parmi les trois kernels utilisés (linéaire,polynomial et radial).
-Nous l'avons par la suite benchmarké avec le gradient boosting et l' arbre de classification.Les AUC obtenues sont presque identiques à celles du SVM. </div>
+Nous l'avons par la suite benchmarké avec le gradient boosting et l' arbre de classification. Les AUC obtenues des benchmarks utilisés sont légèrement inférieures à celles du SVM,donc le svm est meilleur.
+
+  
+  
+
+  <span style="color:  #0000FF"> **4.Limites**</span> 
+    Bien que les svm démontrent de fortes capacités d'apprentissage,ils  comportent des inconvénients en terme d'interoprétabilité.Ces inconvénients proviennent de la mise en place des noyaux kernels dans lesquels probablement des milliers de variables sont ajoutées sans que l'on ait la moindre connaissance du sens métier de ces variables. Ce qui fait des SVM une méthode moindrement recommandée par la réglementation comparativement à la régression logistique par exemple.</div>
  
