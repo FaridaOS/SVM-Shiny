@@ -76,42 +76,54 @@ r_packages:
 
   - kableExtra
 
-  
+  - dplyr
 
   - rmarkdown
 
-  
+  - car
 
   - kernlab
 
-  
+  - gridExtra
 
   - ggplot2
 
-  
+  - gbm
 
   - lattice
 
-  
+  - rpart.plot
 
   - caret
 
-  
+  - rpart
 
   - plotROC
 
-  
+  - ggthemes
 
   - shinythemes
 
- 
+  - dashboard
 
   - plotly
 
+  - Amelia
   
+  - grid
+  
+  - knitr
+  
+  - e1071
+  
+  - shinydashboard
 
+ - flexdashboard
+ 
+ - scales
 
-
+ - DT
+ 
 script:
 
 
