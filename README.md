@@ -2,7 +2,7 @@
  
 <span style="color: #fb4141">**Machine à vecteur de support: SVM**</span> 
  
- <div style="text-align: justify">  **Contexte de l'étude**
+ <div style="text-align: justify">  Contexte de l'étude
   
    La fraude à la carte bancaire est un sujet complexe qui touche des millions de personnes chaque année. Les algorithmes développés doivent être capables de s'adapter tout autant aux spécificités des données de transaction qu'à celles des fraudes. C'est dans ce cadre que nous présentons ici un démonstrateur utilisant les machines à vecteurs de support (SVM) comme algorithme tout en ayant une phase masquée de la complexité algorithmique développée dans les logiciels (utilisable par tous les collaborateurs).
 
@@ -59,5 +59,6 @@ Nous l'avons par la suite benchmarké avec le gradient boosting et l' arbre de c
   
 
   <span style="color:  #0000FF"> **4.Limites**</span> 
-    Bien que les svm démontrent de fortes capacités d'apprentissage,ils  comportent des inconvénients en terme d'interoprétabilité.Ces inconvénients proviennent de la mise en place des noyaux kernels dans lesquels probablement des milliers de variables sont ajoutées sans que l'on ait la moindre connaissance du sens métier de ces variables. Ce qui fait des SVM une méthode moindrement recommandée par la réglementation comparativement à la régression logistique par exemple.</div>
+   
+   Bien que les svm démontrent de fortes capacités d'apprentissage,ils  comportent des inconvénients en terme d'interoprétabilité.Ces inconvénients proviennent de la mise en place des noyaux kernels dans lesquels probablement des milliers de variables sont ajoutées sans que l'on ait la moindre connaissance du sens métier de ces variables. Ce qui fait des SVM une méthode moindrement recommandée par la réglementation comparativement à la régression logistique par exemple.</div>
  
